@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,24 @@
     <title>Mine Sweeper</title>
     <link rel="stylesheet" href="css/app.css">
 </head>
+
 <body onload="init()">
-    <h1>Mine Sweeper</h1> 
-    <h2 class="timer"> timer:</h2>
+    <h1>Mine Sweeper</h1>
+    <h2 class="timer"> Timer:</h2>
     <button class="startBtn " onmousedown="init()">😃</button>
-    <button onclick="difficulty(this)" class="gameButtons button1" >easy</button>
-    <button onclick="difficulty(this)" class="gameButtons button2">hard</button>
-    <button onclick="difficulty(this)" class="gameButtons button3">extreme</button>
-    <div class="board-container"></div>
-    <h3 class="hearts">Hearts Left:</h3>
-    <!-- <table border="1" cellpadding="10">
-        <tbody class="fakeBoard"></tbody>
-    </table> -->
+    <button onclick="megaHint()" class="MegaHint">Mega Hint</button>
+    <div>
+        <button onclick="difficulty(this)" class="gameButtons button1">Beginner</button>
+        <button onclick="difficulty(this)" class="gameButtons button2">Medium</button>
+        <button onclick="difficulty(this)" class="gameButtons button3">Expert</button>
+        <div class="board-container"></div>
+        <h3 class="hearts">Hearts Left:</h3>
+        <button onclick="useHint(this)" class="hint ">Hints Left:</button>
+        <button onclick="safeClick(this)" class="safeClick ">Safe Clicks Left:</button>
+        <button onclick="sevenBoom(this)" class="sevenBoom">7 BOOM!!</button>
+    </div>
     <script src="js/utils.js"></script>
     <script src="js/game.js"></script>
 </body>
+
 </html>

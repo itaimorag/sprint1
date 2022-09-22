@@ -1,20 +1,22 @@
-
 * {
     margin: 0;
     padding: 0;
 
 }
-body{
+
+body {
     background-image: url(/2img.jpg);
-    background-size:cover;
+    background-size: cover;
     margin: auto;
 }
+
 table {
     border-spacing: 10px;
-    background-color: gray;
+    background-color: rgb(183, 159, 159);
     border: 2px solid brown;
     margin: auto;
 }
+
 .cell {
     width: 35px;
     height: 50px;
@@ -22,19 +24,42 @@ table {
     border: 1px solid rgb(144, 109, 109);
     text-align: center;
 }
-.startBtn{
+
+.startBtn {
     margin: auto;
     position: absolute;
     margin-left: 50%;
+    height: 50px;
+    margin-top: 10px;
+    width: 50px;
+    cursor: pointer;
 }
-.gameButtons{
+
+.MegaHint {
+    margin: auto;
+    position: absolute;
+    background-color: rgba(41, 174, 12, 0.839);
+    margin-left: 40%;
+    height: 50px;
+    margin-top: 10px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.gameButtons {
     background-color: brown;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
     margin-bottom: 15px;
     padding: 10px;
-   
+    cursor: pointer;
+
 }
+
+.button1 {
+    margin-left: 32%;
+}
+
 h1 {
     background-color: brown;
     color: burlywood;
@@ -43,21 +68,62 @@ h1 {
     margin-bottom: 15px;
     padding: 10px;
     font-size: 40px;
-    
+
 }
- .cell:hover {
+
+.cell:hover {
     background-color: gainsboro;
     cursor: pointer;
 
 }
-.timer{
+
+.timer {
     background-color: chocolate;
     width: 200px;
     margin: auto;
 }
-.hearts{
-    width: 200px;
+
+.hearts {
+    width: 300px;
+    height: 30px;
     background-color: black;
-    color:white;
+    color: white;
     margin: auto;
+}
+
+.mark {
+    background-color: red;
+}
+
+.hint {
+    background-color: yellow;
+    margin: auto;
+    position: absolute;
+    margin-left: 43%;
+    height: 50px;
+    margin-top: 10px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.safeClick {
+    background-color: rgba(0, 242, 255, 0.857);
+    margin: auto;
+    position: absolute;
+    margin-left: 43%;
+    height: 50px;
+    margin-top: 80px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.sevenBoom {
+    background-color: rgba(249, 3, 3, 0.949);
+    margin: auto;
+    position: absolute;
+    margin-left: 43%;
+    height: 50px;
+    margin-top: 150px;
+    width: 100px;
+    cursor: pointer;
 }
